@@ -1,0 +1,18 @@
+<tr>
+  <td> {{reading.code}}  </td>
+  <td> <img class="ui image" src={{reading.icon}} alt ="weather icon"> <br> {{reading.weather}}</td>
+  <td> Temp {{reading.temperature}} C <br> Feels like {{reading.feelslike}} C </td>
+  <td> {{reading.windSpeed}} bft </td>
+  <td> {{reading.windDirection}} </td>
+  <td> {{reading.pressure}} hpa </td>
+  <td> {{reading.humidity}} % </td>
+  <td> {{reading.dew_point}} C </td>
+         
+</tr>
+
+
+<script>
+function myFunction() {
+  var icon  = document.getElementById("reading.icon").src;
+}
+</script>

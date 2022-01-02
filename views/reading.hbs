@@ -1,0 +1,48 @@
+{{> menu id="reading"}}
+
+<section class="ui raised segment ">
+  <header class="ui header blue">
+    Current Outside Weather
+  </header>
+  {{> feed-table}}
+  
+  <header class="ui header blue">
+    Current Inside Weather & Rain Probability in the next hour
+  </header>
+ {{> inside_reading-table}}
+<form class="ui stacked segment form" action="/reading/addreport" method="POST">
+  <div class="two fields">
+  <div class="field">
+   <label>Latitude</label> <input value="52.6542" type="text" name="lat">
+    </div>
+    <div class="field">
+      <label>Longitude</label> <input value="-7.2522" type="text" name="lng">
+    </div>
+  </div>
+  <button class="ui blue submit button">Add Report</button>
+</form>
+
+  <table border=2 bordercolor="blue" width="1100" >
+<tr><td colspan="2">
+<h1 align="center" color="#blue">Inside Data Collection Dashboard</h1>
+</td></tr>
+<tr><td>
+<iframe width="500" height="250" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1558527/charts/1?api_key=9NUP3IEFBO0AX1FO"></iframe>
+</td>
+<td><iframe width="500" height="250" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1558527/charts/2?api_key=9NUP3IEFBO0AX1FO"></iframe></iframe>
+</td></tr>
+<tr><td>
+<iframe width="500" height="250" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1558527/charts/3?api_key=9NUP3IEFBO0AX1FO"></iframe>
+</td>
+<td>
+<iframe width="500" height="250" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1558527/charts/4?api_key=9NUP3IEFBO0AX1FO"></iframe>
+</td>
+  <tr>
+<td>
+<iframe width="500" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1586867/charts/3?api_key=MDQQLFCD4BZ11PTR"></iframe
+  </td>
+    <td>
+  <iframe width="500" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1558527/maps/channel_show?read_api_key=9NUP3IEFBO0AX1FO"></iframe>
+</td>
+<section>
+
